@@ -1,0 +1,331 @@
+@charset "UTF-8";
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+big,
+code,
+em,
+img,
+q,
+s,
+strike,
+strong,
+syt,
+sup,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+label,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+footer,
+header,
+nav,
+section,
+audio,
+video,
+button,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  outline: 0;
+  font: inherit;
+  font-weight: normal;
+  font-family: "Lantinghei SC", "Microsoft YaHei", "微软雅黑", SimSun, Arial;
+  -webkit-font-smoothing: antialiased;
+  font-weight: lighter;
+}
+
+em,
+i {
+  font-style: normal;
+}
+
+b,
+strong {
+  font-weight: normal;
+}
+
+img {
+  border: none;
+  vertical-align: top;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:active {
+  outline: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+  box-sizing: border-box;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+textarea{resize:none;overflow:hidden;word-wrap:break-word;}
+/*去掉文本域拖拽 去掉滚动条*/
+
+/*取消连接高亮显示*/
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article,
+aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0); box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; -mo-box-sizing: border-box;}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("../font/iconfont.ttf") format("truetype");
+}
+.icom{    font-family: "iconfont";
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: lighter;
+    vertical-align: middle;}
+body{ background: #f5f5f5;}
+.header-bar{ height: 2.34667rem; background: #df0000 ; width: 100%; box-sizing: border-box; position: fixed; top: 0; z-index: 2}
+.header-bar a{ display: inline-block; height: 2.34667rem; padding-left: 0.8rem;font-family: "iconfont";font-style: normal;
+    font-weight: lighter;    line-height: 2.34667rem;    vertical-align: middle; color: #FFF; position: absolute; z-index: 3}
+.header-bar .icon-pre:before {
+    content: "\e60a";
+}
+.header-bar h2{ position: absolute; width: 100%; text-align: center; color: #FFF; top: 0; left: 0; height: 2.34667rem; line-height: 2.34667rem;}
+.wrap{ position: absolute; top: 2.34667rem; width: 100%; padding-bottom: 2.88rem;}
+
+.slideBox{ position:relative; width: 100%;   height:auto; overflow:hidden;}
+.slideBox .hd{ position:absolute; height:1.6rem; line-height:1.6rem; bottom:0; width:100%; text-align:center; z-index:1; }
+.slideBox .hd ul{display:inline-block;}
+.slideBox .hd li{ display:inline-block; width:0.4rem; height:0.4rem;border-radius:0.4rem; text-indent:-9999px; overflow:hidden; margin:0.2rem; background: #fff  }
+.slideBox .hd li.on{ background:#f00;}
+.slideBox .bd{ position:relative; z-index:0; }
+.slideBox .bd li{ position:relative;  }
+.slideBox .bd li img{ width:100%;  height:auto; display:block;   }
+.slideBox .bd li a{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0); /* 取消链接高亮 */ }
+.slideBox .bd li .tit{ display:block; width:100%;  position:absolute; bottom:0; text-indent:10px; height:28px; line-height:28px; background:url(../images/focusBg.png) repeat-x; color:#fff;   }
+
+/*iconWrap*/
+.iconWrap{width: 100%; overflow: hidden; border-top: 1px solid #DADADA; border-bottom: 1px solid #DADADA; margin-top:0.8rem;background: #fff}
+.iconWrap dl{ width: 25%; float: left; padding: 0.8rem; box-sizing: border-box; text-align: center;}
+.iconWrap dl dt{ width: 2.13333rem;    height: 2.13333rem;    line-height: 2.13333rem; margin: 0 auto;}
+.iconWrap dl dd{ font-size: 0.6rem; color: #999; margin-top: 0.53333rem}
+
+.Recommend{ width: 100%; overflow: hidden; height: auto; margin-top: 0.8rem;background: #fff}
+.forYou{ padding:0 1.2rem; box-sizing: border-box; height: 2rem; line-height: 2rem; font-size: 0.85333rem;border-top: 1px solid #DADADA;}
+
+.recomme:before{ content: "\e61d"; color: #df0000; margin-right: 0.2rem; font-size: 1rem}
+.recommList{ width: 100%; overflow:hidden;}
+.recommList li{ width: 100%; overflow: hidden; padding: 0 1rem 0.8rem; box-sizing: border-box; border-bottom: 1px solid #DADADA; }
+.recommList li:nth-of-type(1){ border-top: 1px solid #DADADA;}
+.recommList .h4Title{ border-bottom: 1px solid #DADADA; font-size: 0.85333rem; height: 2.2rem; line-height: 2.2rem; color: #333}
+.baohan{ padding-top: 0.8rem; display: inline-block; color: #333}
+.baohan .left{ width:4.37333rem;  float:left; margin-right: 0.53333rem}
+.baohan .right{ float: left;}
+
+.list-title{ font-size: 0.83332rem;}
+
+.baohan .right span{ color: #999; font-size: 0.69333rem; line-height: 1rem; display: inline-block;}
+.list-bottom { vertical-align: middle; font-size:0.64rem;color: #999 }
+.pinglun:before{ content: "\e612"; margin-right: 0.2rem}
+.tuijian:before{ content: "\e610"; margin-right: 0.2rem;}
+.juli:before{content: "\e629"; margin-right: 0.2rem; margin-left: 0.5rem}
+.footWrap{ width: 100%;  position: fixed; bottom: 0; height: 2.91333rem; border-top: 1px solid #DADADA; padding: 0.3rem 0 0.2rem; background: #fff}
+.footWrap a{ display:inline-block; width: 20%; float: left; text-align: center; color: #333; font-size: 0.64rem}
+.footWrap a:before{ display: block; height:1.33333rem; font-size: 1.12rem; color: #333}
+.footWrap a.current{ color: #F00}
+.footWrap a.current:before{ color: #f00}
+.footWrap a:nth-of-type(1):before{content: "\e605";}
+.footWrap a:nth-of-type(2):before{content: "\e629";}
+.footWrap a:nth-of-type(3):before{content: "\e612";}
+.footWrap a:nth-of-type(4):before{content: "\e618";}
+.footWrap a:nth-of-type(5):before{content: "\e61c";}
+
+/*发现*/
+.recommListA  .right{ width:10rem; }
+.recommListA  .right span{padding-top: 0.3rem;}
+.rightRi{ color: #999; font-size: 0.69333rem; line-height: 1rem; float: left;}
+.rightRi:before{ content:"\e629";}
+.nv:before{ content: "\e62f"; color:#4395FF; margin-left: 0.2rem}
+.nan:before{ content: "\e62e"; color:#f00; margin-left: 0.2rem}
+/*个人中心*/
+.header-barB{    height: 3.1rem;    line-height: 2.34667rem; color: #fff; text-align: center; }
+.topWrap{ background: url(../images/bg-me-head.png) no-repeat center; background-size: 100% 100%; padding: 0 0 2.92333rem; box-sizing: border-box;}
+.toux{ width: 3.2rem; height:3.2rem; margin: 0 auto; border:1px solid #dadada; border-radius: 100%;}
+.mt30{ text-align: center; color: #FFF; font-size: 0.64rem; margin-top: 0.8rem;}
+.mt30 span{ margin-right: 0.25rem}
+.mt30 .rentou:before{ content: "\e602"; }
+
+.ulList{ margin-top: 0.8rem; background-color: #FFF; margin-bottom: 2.88rem}
+.ulList li{ padding: 0.53333rem 0.8rem; border-bottom: 1px solid #dadada; line-height: 2.13333rem;}
+.ulList li:nth-of-type(1){ border-top: 1px solid #dadada;}
+.ulList li img{ width: 2.13333rem; height: 2.13333rem; margin-right: 0.53333rem}
+.ulList li a{ color: #333; font-size:0.85333rem; display: block;}
+.jiantou:before{ content:"\e609"; float: right; color: #999}
+
+.ulListMore {margin-top: 0 !important; margin-top: 2.34667rem !important}
+.ulListMore li{ line-height:1.25rem }
+.ulListMore li:nth-of-type(1){ border-top: 0 !important}
+/*话题*/
+
+.huaT{ padding: 0.26667rem;width: 100%; overflow: hidden; font-size: 0.74667rem; border-bottom: 1px solid #dadada; background: #FFF}
+.huaT li{height: 2rem; line-height: 2rem;width: 25%; text-align: center; float: left; border-left: 1px solid #dadada; color: #999}
+.huaT li:nth-of-type(1){ border-left: 0}
+.huaT li.current{ color: #f00}
+.jtx:before{ content: "\e611"}
+.jts:before{ content: "\e60d"}
+.recommListB .baohan{ width: 100%}
+.recommListB .baohan .right{float: left;}
+.money{ float: right; color: #f00}
+
+
+
+
+
+.mbTop{ background: #FFF; padding: 0.8rem }
+.list-titleB{ font-size: 0.95rem; height: 1.9rem}
+.hours{ font-size: 0.74667rem}
+.hours span{ float: right; color: #F00; font-size: 0.75rem}
+.list-titleC{ font-size:0.95rem; margin-bottom: 0.28rem;}
+.starY:before{ content: "\e61e"; color:orange; margin-right: 0.5rem; font-size: 0.8rem}
+.starY:nth-of-type(1){ margin-left: 1.2rem}
+.fuwuXiang{ background: #FFF; margin-top: 0.8rem}
+.fuwuXiang .list-titleD{ padding: 0.53333rem 0.8rem; border-bottom: 1px solid #dadada; border-top: 1px solid #dadada;}
+.red-bor{ border-left: 2px solid #f66; padding-left: 0.53333rem }
+
+.fuwuXiang a{ color: #666; font-size: 0.74667rem}
+.fuwuXiang li{ padding: 0.53333rem 0.8rem; border-bottom: 1px solid #dadada;}
+.flo-right{ float: right; font-size: 0.75rem}
+.lanse-bor{border-left: 2px solid #00dfcd; padding-left: 0.53333rem}
+.lvse-bor{border-left: 2px solid #4eb9e6; padding-left: 0.53333rem}
+.neirong{ color: #999; width: 100%; overflow:hidden; border-top:1px solid #dadada; padding-top: 0.5rem; margin-top: 0.8rem; font-size: 0.74rem; line-height: 1.9rem;}
+.baohanB{ display: flex;}
+.baohanB .left{ width:8.8rem !important; }
+.starH:before{ color: #666}
+.starH:nth-of-type(1){ margin-left: 0}
+.no-top{ border-top: 0 !important}
+
+
+.all-dian{ font-size: 0.74667rem; text-align: center; color: #666 ; padding: 2rem 0 1.4rem}
+.xiala:before{content: "\e611"; margin-left: 0.2rem}
+.tijButton{ padding:0.53333rem 0.8rem ;}
+.tijButton button{ font-size: 1.26rem; color: #fff; background: #df0000 ; display:block; height: 3rem; line-height: 3rem; width: 100%; border-radius: 4px;}
+
+/*银行卡信息*/
+.formList{ background: #fff; margin-bottom: 0.8rem; border-top: 1px solid #dadada;}
+.formList:nth-of-type(1){border-top: 0}
+.formLs{ display: flex; width: 100%;font-size: 0.74667rem;  overflow: hidden; padding: 0.53333rem 0.8rem; border-bottom: 1px solid #dadada;}
+.formLs dt{ width:3rem; text-align:right; margin-right: 0.6rem}
+.formLs dd{ color: #666;}
+/*我的账户*/
+.yuE{ padding: 1.06667rem; margin: 1.06667rem;}
+.oneMoney{ width: 2.4rem; height: 2.4rem; line-height: 2.4rem; margin: 0 auto; border-radius: 50%;background: #df0000; font-weight:bold;text-align: center; color: #fff}
+.qian{ margin-top: 0.8rem; text-align: center; font-size: 1.15rem}
+.zhye{ margin-top: 0.8rem; text-align: center; font-size: 0.8rem ;color: #999}
+.ulListB{ background: #f5f5f5}
+.ulListB li{ font-size: 0.95333rem; color: #666; background: #fff}
+.ulListB li span{ margin-right: 0.6rem; font-size: 1.2rem;}
+.ulListB li:nth-of-type(1){ margin-bottom: 0.8rem}
+.ulListB li:nth-of-type(2){ border-top: 1px solid #dadada}
+.ulListB li:nth-of-type(1) span:before{content:"\e61b"; color: #999}
+.ulListB li:nth-of-type(2) span:before{content:"\e624"; color: #999}
+.ulListB li:nth-of-type(3) span:before{content:"\e60e"; color: #999}
+.ulListB li:nth-of-type(4) span:before{content:"\e607"; color: #999}
+.ulListB li:nth-of-type(5) span:before{content:"\e614"; color: #999}
+.card-wrap{ padding: 0.8rem; margin-top: 0.8rem; overflow: hidden; display: flex; background: #fff}
+.tupian{width: 2.3rem; height: 2.3rem; margin-right: 0.8rem}
+.card{ width: 80%;}
+.ic-right{ float: right; line-height:2.3rem}
+.ic-right:before{ content: "\e609";}
+.wenzi{ font-size:0.74667rem; color: #666}
+.weihao{font-size: 0.7rem; color: #999}
+.tx-c{ text-align: center; padding: 0.8rem}
+.formLsB{ background: #fff; border: 0; padding: 0.8rem; margin-bottom: 0.2rem}
+
+
+/*添加*/
+
+.formLsC dt{padding-right: 0.2rem !important; width: 4rem}
+.formLsLeft{ text-align:left !important; font-size: 0.85333rem;}
+.formLsLeft dt{ text-align:left !important;}
+.marg-top{ margin-top: 0.8rem; border-top: 1px solid #dadada !important;}
+.select{-webkit-appearance: none;  width:13rem; border: none !important;font-size: 0.74667rem; padding-right: 1.6rem; border-radius: 0.16rem;    box-sizing: border-box; background: url(../images/icon-select-down.svg) no-repeat right 0.53333rem center;    background-size: 1.06667rem;    outline: none;}
+.select option{ line-height: 3rem;}
+
+.shangchuan{ font-size: 0.85333rem; background: #fff; overflow: hidden;border-top: 1px solid #dadada; margin-bottom: 0.8rem}
+.shangchuan .hasLine{ padding: 0.53333rem 0.8rem; border-bottom: 1px solid #dadada;}
+
+.textCenter{ text-align: center; font-size: 0.74667rem; padding-top: 0.53333rem }
+.textAr{ border-color: #dadada; width: 100%; height: 4rem}
+
+.hasLineTu{ padding-bottom: 0;display: flex; border-bottom: 0 !important ; padding-bottom: 0 !important}
+.hasLineTu div{width: 25%; margin-left: 0.8rem}
+.hasLineTu div:nth-of-type(1){ margin-left: 0}
+.hasLineTuLsat{padding-bottom: 0.53333rem !important; border-bottom: 1px solid #dadada !important}
+
+
+
+
+
+
+
+.card

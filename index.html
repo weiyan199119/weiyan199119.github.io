@@ -1,2 +1,143 @@
-hello word
-吴凯
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>demo</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header-bar">
+      <a href="#" class="icon-pre"></a>
+      <h2>我爱你</h2>
+    </header>
+
+    <div class="wrap">
+      <div class="banner">
+    		<div class="slideBox" id="slideBox">
+    			<div class="bd">
+    				<ul>
+
+    						<li class="banner1" >
+    							<a class="pic" href="#"><img src="images/slider-djs-banner.png" alt=""></a>
+    						</li>
+
+    						<li class="banner1" >
+    							<a class="pic" href="#"><img src="images/slider-djs-banner.png" alt=""></a>
+    						</li>
+
+    						<li class="banner1" >
+    							<a class="pic" href="#"><img src="images/slider-djs-banner.png" alt=""></a>
+    						</li>
+
+    						<li class="banner1" >
+    							<a class="pic" href="#"><img src="images/slider-djs-banner.png" alt=""></a>
+    						</li>
+
+    				</ul>
+    			</div>
+
+    			<div class="hd">
+    				<ul></ul>
+    			</div>
+    		</div>
+    	</div>
+
+      <!--shuangye-->
+      <div class="iconWrap">
+        <dl class="iconR">
+          <dt><img src="images/img-djs-cat-one.png" alt=""></dt>
+          <dd>创业融资</dd>
+        </dl>
+        <dl class="iconR">
+          <dt><img src="images/img-djs-cat-two.png" alt=""></dt>
+          <dd>创业融资</dd>
+        </dl>
+        <dl class="iconR">
+          <dt><img src="images/img-djs-cat-three.png" alt=""></dt>
+          <dd>创业融资</dd>
+        </dl>
+        <dl class="iconR">
+          <dt><img src="images/img-djs-cat-four.png" alt=""></dt>
+          <dd>创业融资</dd>
+        </dl>
+      </div>
+
+
+      <div class="Recommend">
+        <h3 class="forYou"><i class=" icom recomme"></i>为你推荐</h3>
+        <ul class="recommList">
+
+
+          <li>
+            <h4 class="h4Title">聊一聊投资人喜欢什么项目</h4>
+            <a href="#" class="baohan">
+              <div class="left"> <img src="images/bg-djs-li.png" alt=""> </div>
+              <div class="right">
+                <p class="list-title">成都猿团科技有限公司 CEO</p>
+                <span>谢恩明</span>
+                <p class="list-bottom">
+                  <i class="icom pinglun">326</i>
+                  <i class="icom tuijian">推荐</i>
+                </p>
+              </div>
+
+            </a>
+          </li>
+          <li>
+            <h4 class="h4Title">聊一聊投资人喜欢什么项目</h4>
+            <a href="#" class="baohan">
+              <div class="left"> <img src="images/bg-djs-li.png" alt=""> </div>
+              <div class="right">
+                <p class="list-title">成都猿团科技有限公司 CEO</p>
+                <span>谢恩明</span>
+                <p class="list-bottom">
+                  <i class="icom pinglun">326</i>
+                  <i class="icom tuijian">推荐</i>
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <h4 class="h4Title">聊一聊投资人喜欢什么项目</h4>
+            <a href="#" class="baohan">
+              <div class="left"> <img src="images/bg-djs-li.png" alt=""> </div>
+              <div class="right">
+                <p class="list-title">成都猿团科技有限公司 CEO</p>
+                <span>谢恩明</span>
+                <p class="list-bottom">
+                  <i class="icom pinglun">326</i>
+                  <i class="icom pinglun tuijian">推荐</i>
+                </p>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+
+
+    </div>
+
+    <div class="footWrap">
+      <a class='icom icom1 current' href="index.html">首页</a>
+      <a class='icom icom2' href="discover.html">发现</a>
+      <a class='icom icom3' href="huati.html">话题</a>
+      <a class='icom icom4' href="me.html">我</a>
+      <a class='icom icom5' href="more.html">更多</a>
+    </div>
+    <script src="js/fonSize.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/yui-slider.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+      TouchSlide({
+        slideCell:"#slideBox",
+        titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+        mainCell:".bd ul",
+        effect:"leftLoop",
+        autoPage:true, //自动分页
+        autoPlay:true //自动门播放
+      });
+    </script>
+  </body>
+</html>
